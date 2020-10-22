@@ -1,0 +1,34 @@
+void setup() {
+  size(357,330);
+  noLoop();
+}
+void draw() {
+  for(int j = 0 ; j <= 30 ; j++)
+  {
+    for(int i = 0; i <= 7; i++)
+    {
+      if (j%2==0) {
+      Brick bob = new Brick(i+(50*i),j+(j*10));
+      bob.show();
+    }
+    else {
+      Brick bob = new Brick(i-25+(50*i),j+(j*10));
+      bob.show();
+    }
+  }
+}
+}
+class Brick {
+  int myX, myY;
+  Brick(int x, int y)
+  {
+    myX = x;
+    myY = y;
+  }
+  void show()
+  {
+    noStroke();
+    fill(255,0,0);
+    rect(myX,myY,50,10);
+  }
+}
