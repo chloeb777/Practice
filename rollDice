@@ -48,33 +48,37 @@ class Die
     square(myX, myY, 50);
     fill(0,0,0);
     if (q == 6) {
-      for(int j = 0 ; j <= 5 ; j++)
-{
-      square(myX + (j*8.5), myY + 25 , 5);
-    }
-}
+      square(myX + 3, myY + 15 , 5);
+      square(myX + 21.5, myY + 15 , 5);
+      square(myX + 40, myY + 15 , 5);
+      square(myX + 3, myY + 30 , 5);
+      square(myX + 21.5, myY + 30 , 5);
+      square(myX + 40, myY + 30 , 5);
+      }
     if (q == 5) {
-      for(int j = 0 ; j <= 4 ; j++)
-{
-      square(myX + (j*10), myY + 25 ,5);
-    }}
+      square(myX + 10, myY + 10 , 5);
+      square(myX + 35, myY + 10 , 5);
+      square(myX + 22.5, myY + 20 , 5);      
+      square(myX + 10, myY + 30 , 5);
+      square(myX + 35, myY + 30 , 5);
+      }
     if (q == 4) {
-      for(int j = 0 ; j <= 3 ; j++)
-{
-      square(myX + (j*13.67), myY + 25 , 5);
-    }}
+      square(myX + 10, myY + 10 , 5);
+      square(myX + 35, myY + 10 , 5);    
+      square(myX + 10, myY + 30 , 5);
+      square(myX + 35, myY + 30 , 5);
+      }
     if (q == 3) {
-      for(int j = 0 ; j <= 2 ; j++)
-{
-      square(myX + (j*20), myY + 25 , 5);
-    }}
+      square(myX + 3, myY + 20 , 5);
+      square(myX + 21.5, myY + 20 , 5);
+      square(myX + 40, myY + 20 , 5);
+      }
     if (q == 2) {
-      for(int j = 0 ; j <= 1 ; j++)
-{
-      square(myX + (j*30), myY + 25 , 5);
-    }}
+      square(myX + 10, myY + 20 , 5);
+      square(myX + 30, myY + 20 , 5);
+    }
     if (q == 1) {
-       square(myX, myY + 25 , 5);
+       square(myX + 21.5, myY + 21.5 , 5);
     }
   }
 }
