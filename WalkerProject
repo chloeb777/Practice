@@ -1,4 +1,3 @@
-  //This isn't working
   Walker[] walkerArray;
   Color[] colorArray;
 int n = 10;
@@ -22,78 +21,19 @@ void draw() {
      }
   }
 for (int i = 0; i<n; i++) {
-       (walkerArray[i]).show();
-  if (i == 0) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 1) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 2) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 3) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 4) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}  
-  if (i == 5) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }} 
-  if (i == 6) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 7) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 8) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(9)].myX, walkerArray[(9)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
-  if (i == 9) {
-    if ((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) <= 50)||(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50)){
-      (walkerArray[i]).myC = color(255, 255, 255);
-    }
-    if (((dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(1)].myX, walkerArray[(1)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(2)].myX, walkerArray[(2)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(3)].myX, walkerArray[(3)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(4)].myX, walkerArray[(4)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(5)].myX, walkerArray[(5)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(6)].myX, walkerArray[(6)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(7)].myX, walkerArray[(7)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(8)].myX, walkerArray[(8)].myY) >= 50)&&(dist(walkerArray[i].myX, walkerArray[i].myY, walkerArray[(0)].myX, walkerArray[(0)].myY) <= 50))){
-      (walkerArray[i]).myC = ((colorArray[i]).newColor);
-    }}
+  (walkerArray[i]).show();
+     for (int j = 0; j<n; j++) {
+        if ((dist((walkerArray[i]).myX,(walkerArray[i]).myY,(walkerArray[j]).myX,(walkerArray[j]).myY)<50)&&(dist((walkerArray[i]).myX,(walkerArray[i]).myY,(walkerArray[j]).myX,(walkerArray[j]).myY)>0)) {
+          (walkerArray[i]).myC=color(255,255,255);
+          (walkerArray[j]).myC=color(255,255,255);
+}
+        if (dist((walkerArray[i]).myX,(walkerArray[i]).myY,(walkerArray[j]).myX,(walkerArray[j]).myY)!=0) {
+        if (!(dist((walkerArray[i]).myX,(walkerArray[i]).myY,(walkerArray[j]).myX,(walkerArray[j]).myY)<50)) {
+          (walkerArray[i]).myC=(colorArray[i]).newColor;
+        }}
 }}
+
+}
 class Color {
   color newColor;
   Color(int a, int b, int c) {
@@ -131,6 +71,5 @@ class Walker {
     fill(myC);
     ellipse(myX, myY, 50, 50);
     fill(0);
-    text(myI, myX, myY);
   }
 }
