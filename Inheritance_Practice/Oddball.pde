@@ -1,7 +1,7 @@
 class OddBall extends Ball {
   OddBall() {
     xPos = 250;
-    yPos = 0;
+    yPos = -10;
     xSz = 40;
     ySz = 40;
     bSpeed = 1;
@@ -10,8 +10,8 @@ class OddBall extends Ball {
   }
   void update() {
     yPos++;
-    if (yPos>300){
-      yPos = 0;
+    if (yPos>320){
+      yPos = -10;
     }
     
   }
